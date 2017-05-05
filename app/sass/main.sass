@@ -85,6 +85,7 @@ ul, li
 	position: relative
 	&__logo
     	line-height: 82px
+    	text-align: right
 	&__form 
 		display: block
 		position: relative
@@ -92,7 +93,6 @@ ul, li
 		&-icon
 			margin-left: 15px
 		&-dropdown
-			position: relative
 			display: inline-block
 			text-transform: capitalize
 			width: 100%
@@ -103,6 +103,7 @@ ul, li
 			transition: .5s ease
 			border: 1px solid #cecece
 			background: #e3e3e3
+			float: left
 			&:hover, &:active, &:focus
 				text-decoration: none
 				color: #262626
@@ -123,7 +124,7 @@ ul, li
 			line-height: 40px
 			width: 40px
 			top: 0
-			left: 729px
+			left: 860px
 			border: none
 			background-color: #189299
 			&:active, &:focus, &:hover
@@ -133,24 +134,78 @@ ul, li
 			font-size: 1.4em 
 			color: $white
 		&-request
-			position: relative
 			display: inline-block
 			text-transform: uppercase
+			text-align: center
 			width: 100%
 			color: $white
-			padding: 15px
+			padding: 13px
 			font-size: 0.875em
 			font-family: $helvetica_bold
-			max-width: 170px
+			max-width: 165px
 			cursor: pointer
 			transition: .5s ease
 			background: $button
+			margin-left: 10px
 			&:hover, &:active, &:focus
 				text-decoration: none
 				background: #11686d
 				color: $white
-
+	&__nav
+		display: block
+		&-list
+			list-style-type: none
+			margin-top: 21px
+		&-item
+			display: inline-block
+		&-link
+			display: block
+			position: relative
+			color: $font_color
+			padding: 9px 16px 11px 16px
+			cursor: pointer
+			transition: .5s ease
+			&:hover, &:active, &:focus
+				text-decoration: none
+				color: #262626
+		&-img
+			margin-top: -8px
+			cursor: auto
+		&-value
+			position: absolute
+			top: 33px
+			right: 47px
+			color: $font_color
 // HEADER STYLES END
+
+// MENU STYLES
+.menu
+	line-height: 20px
+	border-bottom: 1px solid rgba(175, 174, 174, .6)
+	&__list
+		list-style-type: none
+		max-width: 1200px
+		margin: auto	
+	&__item
+		display: inline-block
+	&__link
+		display: block
+		position: relative
+		color: $font_color
+		font-size: 1.063em
+		padding: 5px 0
+		cursor: pointer
+		transition: .5s ease
+		margin-right: 50px
+		&:hover, &:active, &:focus
+			text-decoration: none
+			color: #189299
+		&-last
+			margin-right: 0	
+		&-first
+			margin-left: 15px
+
+
 
 // SEARCH FIELD STYLES
 .ms-ctn
@@ -160,15 +215,22 @@ ul, li
 	border: 1px solid #cecece
 	padding: 5px 12px
 	height: 40px
-	max-width: 570px
+	max-width: 700px
 	width: 100%
 	margin-left: -1px
 	color: $input_color
+	float: left
 .ms-ctn input
 	padding-top: 2px
 .ms-ctn .ms-sel-item
 	padding: 3px 5px
-
+.ms-sel-ctn .ms-sel-item,
+.ms-ctn .ms-sel-item
+	color: rgba(0, 0, 0, 0.6)
+	border: 1px solid #cecece
+.ms-sel-ctn .ms-sel-item:hover
+.ms-ctn .ms-sel-item:hover
+	color: #262626
 // SEARCH FIELD STYLES END
 
 

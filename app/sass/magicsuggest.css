@@ -107,7 +107,7 @@
 .ms-res-ctn{
     width: 100%;
     display: block;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
 }
 .ms-res-ctn .ms-res-group{
     line-height: 23px;
@@ -146,12 +146,12 @@
 /** Outer and global tags **/
 .ms-sel-ctn .ms-sel-item{
     background: #F3F3F3;
-    color: #999;
+    /*color: #999;*/
     float: left;
     font-size: 12px;
     padding: 3px 5px;
-    border-radius: 3px;
-    border: 1px solid #DDD;
+    /*border-radius: 3px;*/
+    /*border: 1px solid #DDD;*/
     margin: 3px 0px 1px 0;
 }
 .ms-sel-ctn .ms-sel-item:hover{
@@ -160,12 +160,12 @@
 /** For inner tags **/
 .ms-ctn .ms-sel-item{
     background: #F3F3F3;
-    color: #999;
+    /*color: #999;*/
     float: left;
     font-size: 12px;
     padding: 0 5px;
-    border-radius: 3px;
-    border: 1px solid #DDD;
+    /*border-radius: 3px;*/
+    /*border: 1px solid #DDD;*/
     margin: 1px 5px 1px 0;
 }
 .ms-ctn .ms-sel-item:hover{

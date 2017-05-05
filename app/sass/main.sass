@@ -2,29 +2,46 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "fontello"
+@import "magicsuggest"
+
+*
+	box-sizing: border-box
 
 *::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+    color: $input_color
+
+*:focus::-webkit-input-placeholder
+	opacity: 0
+	transition: opacity .3s ease
 
 *:-moz-placeholder
-	color: #666
-	opacity: 1
+    color: $input_color
+
+*:focus:-moz-placeholder
+	opacity: 0
+	transition: opacity .3s ease
 
 *::-moz-placeholder
-	color: #666
-	opacity: 1
+    color: $input_color
+
+*:focus::-moz-placeholder
+	opacity: 0
+	transition: opacity .3s ease
 
 *:-ms-input-placeholder
-	color: #666
-	opacity: 1
+    color: $input_color
+
+*:focus:-ms-input-placeholder
+	opacity: 0
+	transition: opacity .3s ease
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+	color: $input_color
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: $input_color
 
 html, body
 	height: 100%
@@ -33,13 +50,126 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.75
-	font-family: $default-font
+	line-height: 1
+	font-family: $helvetica_light
 	overflow-x: hidden
+	min-height: 100vh
+	height: auto
+
+h1, h2, h3, h4, h5, h6
+	padding: 0
+	margin: 0
+
+p
+	padding: 0
+	margin: 0
+
+ul, li
+	padding: 0
+	margin: 0
+
+.p0
+	padding: 0 !important
+
+.m0
+	margin: 0 !important
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+// HEADER STYLES
+.header
+	background: #f3f3f3
+	position: relative
+	&__logo
+    	line-height: 82px
+	&__form 
+		display: block
+		position: relative
+		margin-top: 21px
+		&-icon
+			margin-left: 15px
+		&-dropdown
+			position: relative
+			display: inline-block
+			text-transform: capitalize
+			width: 100%
+			color: $font_color
+			padding: 11px 0 11px 15px
+			max-width: 200px
+			cursor: pointer
+			transition: .5s ease
+			border: 1px solid #cecece
+			background: #e3e3e3
+			&:hover, &:active, &:focus
+				text-decoration: none
+				color: #262626
+		// &-field 
+		// 	display: inline-block
+		// 	padding-left: 15px
+		// 	width: 570px
+		// 	height: 40px
+		// 	color: $input_color
+		// 	border: 1px solid #cecece
+		// 	margin-left: -5px
+		// 	&:active, &:focus
+		// 		outline: 0
+		&-button
+			position: absolute
+			padding: 0
+			height: 40px
+			line-height: 40px
+			width: 40px
+			top: 0
+			left: 729px
+			border: none
+			background-color: #189299
+			&:active, &:focus, &:hover
+				outline: 0
+				background: #11686d
+		&-btn
+			font-size: 1.4em 
+			color: $white
+		&-request
+			position: relative
+			display: inline-block
+			text-transform: uppercase
+			width: 100%
+			color: $white
+			padding: 15px
+			font-size: 0.875em
+			font-family: $helvetica_bold
+			max-width: 170px
+			cursor: pointer
+			transition: .5s ease
+			background: $button
+			&:hover, &:active, &:focus
+				text-decoration: none
+				background: #11686d
+				color: $white
+
+// HEADER STYLES END
+
+// SEARCH FIELD STYLES
+.ms-ctn
+	position: relative
+	display: inline-block
+	background: $white
+	border: 1px solid #cecece
+	padding: 5px 12px
+	height: 40px
+	max-width: 570px
+	width: 100%
+	margin-left: -1px
+	color: $input_color
+.ms-ctn input
+	padding-top: 2px
+.ms-ctn .ms-sel-item
+	padding: 3px 5px
+
+// SEARCH FIELD STYLES END
+
 
 @import "media" // Всегда в конце

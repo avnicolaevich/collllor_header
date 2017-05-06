@@ -9,9 +9,9 @@
  * Licence:      MagicSuggest is licenced under MIT licence (http://opensource.org/licenses/MIT)
  */
 .ms-ctn{
-    position: relative;
-    padding: 5px 12px;
-    height: auto;
+/*    position: relative;
+    padding: 5px 12px;*/
+    /*height: auto;*/
 }
 .ms-ctn-invalid{
     border: 1px solid #CC0000;
@@ -25,19 +25,19 @@
 }
 .ms-ctn-bootstrap-focus,
 .ms-ctn-bootstrap-focus .ms-res-ctn{
-    /*border-color: rgba(82, 168, 236, 0.8) !important;*/
-    /* IE6-9 */
-    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;*/
-    /*-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;*/
-    /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;*/
-    /*border-bottom-left-radius: 0;*/
-    /*border-bottom-right-radius: 0;*/
+    border-color: rgba(82, 168, 236, 0.8) !important;
+    /*IE6-9*/ 
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6) !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .ms-ctn-focus{
-    /*border-color: #66afe9;*/
+    border-color: #66afe9;
     outline: 0;
-    /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);*/
-            /*box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .ms-ctn input{
     border: 0;
@@ -92,14 +92,14 @@
     margin-top: 15px;*/
 }
 .ms-ctn .ms-trigger:hover{
-/*    background-color: #e6e6e6;*/
+    background-color: #e6e6e6;
 }
 .ms-ctn .ms-trigger:hover .ms-trigger-ico{
-/*    background-position: 0 -4px;*/
+    background-position: 0 -4px;
 }
 .ms-ctn-disabled .ms-trigger{
-/*    cursor: not-allowed;
-    background-color: #eeeeee;*/
+    cursor: not-allowed;
+    background-color: #eeeeee;
 }
 .ms-ctn-bootstrap-focus{
     border-bottom: 1px solid #CCC;

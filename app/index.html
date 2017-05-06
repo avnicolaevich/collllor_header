@@ -28,11 +28,16 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-2">
+					<div class="header__menu">
+						<button class="header__menu-button" type="submit">
+							<i class="icon-menu header__menu-btn"></i>
+						</button>
+					</div>
 					<div class="header__logo">
 						<img src="img/logo.png" alt="collllor">
 					</div>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-10">
 					<form class="header__form" action="#" method="get">
 						<a class="header__form-dropdown" href="javascript:void(0);">Commercial printing<i class="icon-down-dir header__form-icon"></i></a>
 						<input class="header__form-field" id="magicsuggest" type="text" placeholder="What you are looking for..." name="keywords" autocomplete="off">
@@ -41,19 +46,49 @@
 						</button>
 						<a class="header__form-request" href="javascript:void(0);">Request a quote</a>
 					</form>
-				</div>
-				<div class="col-md-2">
 					<div class="header__nav">
 						<ul class="header__nav-list">
 							<li class="header__nav-item">
 								<a class="header__nav-link" href="javascript:void(0);">My Account</a>
+								<ul class="header__subnav">
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">User's Name</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">General</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">Payment Method</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">Change Password</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">Address Book</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">My Orders</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">My Inbox</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">My Favorites</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">My Bonuses</a>
+									</li>
+									<li class="header__subnav-item">
+										<a class="header__subnav-link" href="javascript:void(0);">Sign Out</a>
+									</li>									
+								</ul>
 							</li>
 							<li class="header__nav-item">
 								<a class="header__nav-link" href="javascript:void(0);">Help</a>
 							</li>
 							<li class="header__nav-item">
-								<a class="header__nav-link" href="javascript:void(0);"><img class="header__nav-img" src="img/cart-icon.png" alt="cart"></a>
-								<span class="header__nav-value">(0)</span>
+								<a class="header__nav-link" href="javascript:void(0);"><img class="header__nav-img" src="img/cart-icon.png" alt="cart">(<span class="header__nav-value">0</span>)
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -63,11 +98,50 @@
 	</header>
 	<section class="menu hidden-xs">
 		<div class="container-fluid p0">
-			<div class="row">
+			<div class="row bottom-border">
 				<div class="col-xs-12">
 					<ul class="menu__list">
-						<li class="menu__item">
+						<li class="menu__item menu__item-printing">
 							<a class="menu__link menu__link-first" href="javascript:void(0);">Printing</a>
+							<div class="menu__sub">
+								<div class="menu__sub-columnone">
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Booklets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Brochures</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Books</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Magnets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Booklets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Brochures</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Books</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Magnets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Booklets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Brochures</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Books</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Magnets</a></li>
+									</ul>
+								</div>
+								<div class="menu__sub-columntwo">
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Booklets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Brochures</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Books</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Magnets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Booklets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Brochures</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Books</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Magnets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Booklets</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Brochures</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Books</a></li>
+										<li class="menu__sub-item"><a class="menu__sub-link" href="javascript:void(0);">Magnets</a></li>
+									</ul>
+								</div>
+								<div class="menu__sub-image">
+									<img class="menu__sub-img" src="img/menu-img.jpg" alt="menu"/>
+									<h4 class="menu__sub-heading">1% cash bonus</h4>
+									<p class="menu__sub-text">on all printing orders</p>
+								</div>
+							</div>
 						</li>
 						<li class="menu__item">
 							<a class="menu__link" href="javascript:void(0);">Packaging</a>
@@ -98,6 +172,18 @@
 			</div>
 		</div>
 	</section>
+	<div class="main">
+		<div class="container-fluid p0">
+			<div class="row">
+				<div class="col-xs-12 col-sm-9 p0">
+					<div class="main__illustration"></div>
+				</div>
+				<div class="col-xs-3 p0 hidden-xs">
+					<div class="main__background"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 		
 			
 

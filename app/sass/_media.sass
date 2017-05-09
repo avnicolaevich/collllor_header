@@ -6,7 +6,8 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
 	/**/
-	.header__nav
+	.header__nav,
+	.guest__nav
 		float: right
 		margin-top: 10px
 	.header
@@ -52,7 +53,12 @@
 		height: 37px
 	.menu__link
 		margin-right: 7px
-		
+	.seller
+		float: right
+	.seller-left
+		left: 50%
+		text-align: center
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
@@ -76,12 +82,15 @@
 		opacity: 1
 	.header__form-icon
 		margin-left: 40px
-	.header__nav
+	.header__nav,
+	.guest__nav
 		max-width: 80px
 	.header__nav-list
 		float: right
 	.header__nav-item:first-child,
 	.header__nav-item:nth-child(2)
+		display: none
+	.guest__nav-link
 		display: none
 
 

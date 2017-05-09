@@ -100,7 +100,35 @@ ul, li
 	width: 100%
 	z-index: 10
 	height: 109px
+.guest__nav
+	display: block
+	width: 100%
+	max-width: 400px
+	line-height: 40px
 
+.guest__nav-item
+	display: inline-block
+	position: relative
+
+.guest__nav-link
+	display: block
+	color: $font_color
+	padding: 0 10px
+	cursor: pointer
+	transition: .5s ease-in-out
+	float: left
+	outline: none
+	&:hover, &:active, &:focus
+		text-decoration: none
+		color: #262626
+.guest__hidden-item
+	padding-bottom: 10px
+	border-bottom: 2px solid $white
+.guest
+	padding-bottom: 15px
+	border-bottom: 2px solid #189299
+.guest__hidden-item
+	padding: 10px 50px
 // HEADER STYLES
 .header
 	background: #f3f3f3
@@ -339,7 +367,7 @@ ul, li
 			line-height: 18px
 	&__hidden
 		position: absolute
-		display: block
+		display: none
 		z-index: 500
 		top: 53px
 		right: 0
@@ -366,6 +394,7 @@ ul, li
 			&:hover, &:active, &:focus
 				text-decoration: none
 				color: #262626
+
 // MENU STYLES END
 
 // MAIN STYLES

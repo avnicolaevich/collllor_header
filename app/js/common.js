@@ -13,8 +13,9 @@ $(document).ready(function(){
         });
     });
 
-    $(".header__menu-button").click(function() {
+    $(".header__nav-menu").click(function() {
         $(".menu__hidden").toggle('slow');
     });
+
 
 });

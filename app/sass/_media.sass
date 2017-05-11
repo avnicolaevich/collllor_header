@@ -19,36 +19,24 @@
 		margin-left: 5px
 	.header__request-link
 		font-size: 0.8em
-		padding: 14px 10px 13px 10px
-	.header__nav,
-	.guest__nav
+		padding: 14px 10px 14px 10px
+	.header__nav
 		float: right
-	// 	margin: auto
-	// 	margin-top: 10px
-	// 	margin-bottom: -7px
-	// .header__nav-list,
-	// .guest__nav-list
-	// 	width: 300%
-	// .header__nav-link,
-	// .guest__nav-link
-	// 	padding: 0 50px
-	// .header
-	// 	height: 120px
+	.header__nav-listSeller
+		float: right
 	.ms-ctn .ms-sel-item
 		left: 10px
 	.menu__sub
 		left: 5px
 		top: 35px
 	.header__subnav
-		top: 115%
+		left: 103%
 	.header__subnav-item:first-child
 		padding-top: 20px
-	.menu
-		height: 34px
-	.main
-		margin-top: 364px
-	// .header__form	
-	// 	max-width: 50px
+	.header__dropdown
+		left: 15px
+	.header__dropdown-columnone::after
+		left: 125px
 	.menu__link
 		margin-right: 20px
 
@@ -83,23 +71,60 @@
 		max-width: 220px	
 	.header__nav-link	
 		margin-left: 5px
-	.header__nav,
-	.guest__nav
+	.header__nav-seller
+		max-width: 500px
+	.header__nav
 		float: right
-	.main
-		margin-top: 387px 
-	.menu
-		height: 37px
+	.header__subnav
+		top: 77%
+		left: 103%
+	.header__dropdown-columnone::after
+		left: 65px
 	.menu__link
 		padding: 5px
 		margin-right: 7px
+	.menu__sub
+		left: 5px
+		top: 25px
 	.seller
 		float: right
 	.seller-left
 		left: 50%
 		text-align: center
 	.ms-ctn input
-		font-size: 0.7em
+		font-size: 0.9em
+	.ms-ctn .ms-sel-item
+		left: 10px
+	.menu__item-printing .menu__sub-columnone::after
+		left: 20px
+	.menu__item-packaging .menu__sub-columnone::after
+		left: 30px
+	.menu__item-signage .menu__sub-columnone::after
+		left: 80px
+	.menu__item-signage .menu__sub
+		left: -60px
+	.menu__item-3d .menu__sub-columnone::after
+		left: 130px
+	.menu__item-3d .menu__sub
+		left: -120px
+	.menu__item-large .menu__sub-columnone::after
+		left: 200px
+	.menu__item-large .menu__sub
+		left: -160px
+	.menu__item-sublimation .menu__sub-columnone::after
+		left: 340px
+	.menu__item-sublimation .menu__sub
+		left: -300px
+	.menu__item-embroidery .menu__sub-columnone::after
+		left: 440px
+	.menu__item-embroidery .menu__sub
+		left: -400px
+	.menu__item-graphic .menu__sub-columnone::after
+		left: 520px
+	.menu__item-graphic .menu__sub
+		left: -480px
+	.menu__item-equipment .menu__sub-columnone::after
+		left: 595px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
@@ -127,9 +152,8 @@
 		right: 5px
 	.header__nav
 		position: absolute
-		top: 0
-		right: -15px
-	.header__nav-list
+		top: 5px
+		right: -5px
 	.header__nav-link
 		display: inline-block
 		font-size: 1.6em
@@ -137,6 +161,8 @@
 		margin-left: 0
 	.header__request-link
 		padding: 9px 13px
+	.header__request-linkSeller
+		padding: 8px 13px
 	.header__nav-item:last-child
 		margin-left: 30px 
 	.ms-ctn input
@@ -153,15 +179,22 @@
 			color: $font_color
 	.icon-cart-icon
 		vertical-align: middle
+	.header__form
+		margin-left: 15px
+	.header__request
+		margin-right: 15px
+	.ms-ctn .ms-sel-item
+		left: 23px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
 	/**/
-	body
-		// font-size: 12px
 	.header__nav
-		right: -15px
+		top: 0
+		right: -5px
 	.header__nav-item:last-child
-		margin-left: 15px 
+		margin-left: 5px 
+	.main
+		margin-top: 200px 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
 	/**/

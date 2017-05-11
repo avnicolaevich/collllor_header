@@ -85,9 +85,106 @@ ul, li
 .bottom-border
 	border-bottom: 1px solid rgba(175, 174, 174, .6)
 
-.menu__item-printing:hover .menu__sub
+// PRINTING CATEGORY
+.menu__item-printing:hover > .menu__sub
+	display: block
+.menu__item-printing .menu__sub-columnone::after
+	left: 25px
+// PACKAGING CATEGORY
+.menu__item-packaging:hover > .menu__sub
+	display: block
+.menu__item-packaging .menu__sub-columnone::after
+	left: 35px
+// SIGNAGE CATEGORY
+.menu__item-signage:hover > .menu__sub
+	display: block
+.menu__item-signage .menu__sub-columnone::after
+	left: 32px
+// LARGE CATEGORY
+.menu__item-large:hover > .menu__sub
+	display: block
+.menu__item-large .menu__sub
+	left: -75px
+.menu__item-large .menu__sub-columnone::after
+	left: 120px
+// 3D CATEGORY
+.menu__item-3d:hover > .menu__sub
+	display: block	
+.menu__item-3d .menu__sub
+	left: -25px
+// SUBLIMATION CATEGORY
+.menu__item-sublimation:hover > .menu__sub
+	display: block	
+.menu__item-sublimation .menu__sub
+	left: -200px
+.menu__item-sublimation .menu__sub-columnone::after
+	left: 240px
+// EMBROIDERY CATEGORY
+.menu__item-embroidery:hover > .menu__sub
+	display: block
+.menu__item-embroidery .menu__sub
+	left: -300px
+.menu__item-embroidery .menu__sub-columnone::after
+	left: 335px
+// GRAPHIC CATEGORY
+.menu__item-graphic:hover > .menu__sub
+	display: block
+.menu__item-graphic .menu__sub
+	left: -450px
+.menu__item-graphic .menu__sub-columnone::after
+	left: 495px
+// EQUIPMENT CATEGORY
+.menu__item-equipment:hover > .menu__sub
+	display: block	
+.menu__item-equipment .menu__sub
+	left: -565px
+.menu__item-equipment .menu__sub-columnone::after
+	left: 605px
+
+.header__category:hover .header__dropdown,
 	display: block
 
+.header__dropdown-printing:hover .header__subdropdown
+	display: block
+.header__dropdown-signage:hover > .header__subdropdown
+	display: block
+.header__dropdown-packaging:hover > .header__subdropdown
+	display: block
+.header__dropdown-large:hover > .header__subdropdown
+	display: block
+.header__dropdown-sublimation:hover > .header__subdropdown
+	display: block
+.header__dropdown-embroidery:hover > .header__subdropdown
+	display: block
+.header__dropdown-graphic:hover > .header__subdropdown
+	display: block
+.header__dropdown-equipment:hover > .header__subdropdown
+	display: block
+.header__nav-help:hover > .header__subnav
+	display: block
+.header__nav-help .header__subnav
+	left: -30%
+	text-align: center
+
+
+.menu__hidden-printing:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-packaging:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-signage:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-3d:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-large:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-sublimation:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-embroidery:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-graphic:hover > .menu__subdropdown-list
+	display: block
+.menu__hidden-equipment:hover > .menu__subdropdown-list
+	display: block
 .invisibly
 	display: none
 	position: absolute
@@ -103,35 +200,6 @@ ul, li
 	width: 100%
 	z-index: 10
 	height: 109px
-.guest__nav
-	display: block
-	width: 100%
-	max-width: 400px
-	line-height: 40px
-
-.guest__nav-item
-	display: inline-block
-	position: relative
-
-.guest__nav-link
-	display: block
-	color: $font_color
-	padding: 0 10px
-	cursor: pointer
-	transition: .5s ease-in-out
-	float: left
-	outline: none
-	&:hover, &:active, &:focus
-		text-decoration: none
-		color: #262626
-.guest__hidden-item
-	padding-bottom: 10px
-	border-bottom: 2px solid $white
-.guest
-	padding-bottom: 15px
-	border-bottom: 2px solid #189299
-.guest__hidden-item
-	padding: 10px 50px
 // HEADER STYLES
 .header
 	background: #f3f3f3
@@ -145,6 +213,7 @@ ul, li
 		max-width: 200px
 		height: 40px
 		float: right
+		position: relative
 		&-link
 			display: block
 			text-transform: capitalize
@@ -163,6 +232,76 @@ ul, li
 				color: #262626
 		&-icon
 			margin-left: 20px
+	&__dropdown
+		display: none
+		position: absolute
+		width: 550px
+		height: 310px
+		border: 1px solid rgba(134, 130, 130, 0.54)
+		background-color: $white
+		z-index: 26
+		top: 40px
+		left: 0
+		&-columnone
+			display: block
+			height: 260px
+			position: absolute
+			top: 0
+			border: none
+			background: $white
+			margin-top: 22px
+			z-index: 27
+			border-right: 1px solid rgba(134, 130, 130, 0.54)
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				top: -28px
+				left: 157px
+				width: 10px
+				height: 10px
+				background: #FFFFFF
+				border-right: 1px solid rgba(134, 130, 130, 0.54)
+				border-bottom: 1px solid rgba(134, 130, 130, 0.54)
+				-moz-transform: rotate(225deg)
+				-webkit-transform: rotate(225deg)
+		&-list
+			list-style-type: none
+		&-item
+			text-align: left
+			width: 179px
+			padding-left: 30px
+		&-link
+			color: rgb(112, 114, 114)
+			font-size: 0.875em
+			line-height: 20px
+			&:hover, &:focus, &:active
+				text-decoration: none
+				color: #189299
+	&__subdropdown
+		display: none
+		height: 260px
+		width: 360px
+		position: absolute
+		top: 0
+		left: 170px
+		border: none
+		z-index: 11
+		&-list
+			list-style-type: none
+			padding-left: 20px
+		&-item
+			width: 50%
+			float: left
+		&-link
+			display: block
+			margin-right: 50px
+			color: rgb(112, 114, 114)
+			font-size: 0.875em
+			line-height: 20px
+			&:hover, &:focus, &:active
+				text-decoration: undelline
+				color: #189299
 	&__form 
 		display: block
 		max-width: 650px
@@ -206,12 +345,33 @@ ul, li
 				text-decoration: none
 				background: #11686d
 				color: $white
+		&-linkSeller
+			display: block
+			text-transform: uppercase
+			text-align: center
+			color: $white
+			padding: 6px 1px
+			font-size: 0.875em
+			font-family: $helvetica_bold
+			max-width: 200px
+			width: 99%
+			cursor: pointer
+			transition: .5s ease
+			background: $button
+			float: left
+			&:hover, &:active, &:focus
+				text-decoration: none
+				background: #11686d
+				color: $white
 	&__nav
 		display: block
 		max-width: 200px
 		line-height: 40px
 		width: 100%
 		float: left
+		&-seller
+			max-width: 400px
+			margin-left: 10px
 		&-list
 			list-style-type: none
 		&-item
@@ -239,9 +399,10 @@ ul, li
 		&-value
 			position: relative
 			top: 2px
-			right: -2px
+			right: 2px
 			color: $font_color
-		&-item:hover .header__subnav
+		&-account:hover > .header__subnav,
+		&-help:hover > .header__subnav
 			visibility: visible
 			opacity: 1
 			transform: scale(1)	
@@ -249,9 +410,9 @@ ul, li
 		list-style-type: none
 		position: absolute
 		width: 210px
-		top: 116%
-		left: 105%
-		z-index: 3
+		top: 103%
+		left: 100%
+		z-index: 502
 		line-height: 1
 		margin-left: -105px
 		background: $white
@@ -281,7 +442,7 @@ ul, li
 
 // MENU STYLES
 .menu
-	height: 35px
+	height: auto
 	background-color: #FFF
 	&__list
 		list-style-type: none
@@ -305,8 +466,6 @@ ul, li
 			color: #189299
 		&-last
 			margin-right: 0	
-		// &-first
-		// 	margin-left: 15px
 	&__sub
 		display: none
 		position: absolute
@@ -383,22 +542,19 @@ ul, li
 			color: $input_color
 			line-height: 18px
 	&__hidden
-		position: absolute
+		position: fixed
 		display: none
 		z-index: 500
-		top: 53px
+		top: 87px
 		right: 0
 		width: 100%
 		height: 5000px
 		border: none
-		background-color: rgba(255, 255, 255, .8)
+		background-color: rgba(255, 255, 255, .9)
 		&-list
 			list-style-type: none 
 		&-item
 			padding: 10px 50px
-			&:nth-child(2)
-				padding-bottom: 15px
-				border-bottom: 2px solid rgb(23, 129, 120)
 		&-link
 			display: block
 			width: 100%
@@ -411,7 +567,24 @@ ul, li
 			&:hover, &:active, &:focus
 				text-decoration: none
 				color: #262626
-
+	&__subdropdown
+		&-list
+			display: none	
+			list-style-type: none
+			text-align: center
+		&-item
+			line-height: 20px
+		&-link
+			display: inline-block
+			width: 50%
+			text-align: center
+			font-size: 1em
+			color: $font_color
+			cursor: pointer
+			outline: none
+			&:hover, &:active, &:focus
+				text-decoration: underline
+				color: #262626
 // MENU STYLES END
 
 // MAIN STYLES

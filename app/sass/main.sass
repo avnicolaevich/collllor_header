@@ -69,10 +69,13 @@ ul, li
 	margin: 0
 
 .p0
-	padding: 0 !important
+	padding: 0 
 
 .m0
-	margin: 0 !important
+	margin: 0 
+
+.static
+	position: static
 
 .img-responsive
 	display: block
@@ -133,7 +136,6 @@ ul, li
 .header
 	background: #f3f3f3
 	position: relative
-	height: 82px
 	padding-top: 21px
 	&__menu
 		display: none
@@ -148,7 +150,7 @@ ul, li
 			text-transform: capitalize
 			width: 100%
 			color: $font_color
-			padding: 12px 15px 12px 15px
+			padding: 12px 5px 12px 10px
 			max-width: 200px
 			font-size: 0.875em
 			cursor: pointer
@@ -185,13 +187,13 @@ ul, li
 		max-width: 175px
 		height: 40px
 		float: left
-		margin-left: 15px
+		margin-left: 10px
 		&-link
 			display: block
 			text-transform: uppercase
 			text-align: center
 			color: $white
-			padding: 13px 15px
+			padding: 13px 13px
 			font-size: 0.875em
 			font-family: $helvetica_bold
 			max-width: 200px
@@ -206,11 +208,10 @@ ul, li
 				color: $white
 	&__nav
 		display: block
-		max-width: 250px
+		max-width: 200px
 		line-height: 40px
 		width: 100%
 		float: left
-		margin-left: -5px
 		&-list
 			list-style-type: none
 		&-item
@@ -221,6 +222,7 @@ ul, li
 			color: $font_color
 			padding: 0 10px
 			cursor: pointer
+			font-size: 0.97em
 			transition: .5s ease-in-out
 			float: left
 			outline: none
@@ -229,7 +231,10 @@ ul, li
 				color: #262626
 			&:first-child
 				padding-left: 0
-		&-img
+		&-icon
+			font-size: 1.4em
+			width: 40px
+			height: 40px
 			margin-top: -5px
 		&-value
 			position: relative
@@ -244,7 +249,7 @@ ul, li
 		list-style-type: none
 		position: absolute
 		width: 210px
-		top: 120%
+		top: 116%
 		left: 105%
 		z-index: 3
 		line-height: 1
@@ -443,7 +448,7 @@ ul, li
 	position: absolute
 	z-index: 1
 	top: 6px
-	left: 220px
+	left: 10px
 	padding: 3px 5px
 .ms-sel-ctn .ms-sel-item,
 .ms-ctn .ms-sel-item

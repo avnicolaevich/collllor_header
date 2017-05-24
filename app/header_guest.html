@@ -200,11 +200,12 @@
 						</div>
 					</div>
 					<div class="col-xs-9 col-sm-3 col-lg-4 p0">
-						<form class="header__form" action="#" method="post">
-							<input class="header__form-field" id="magicsuggest" type="text" placeholder="What you are looking for..." name="keywords" autocomplete="off">
-							<button class="header__form-button" type="submit">
-								<i class="icon-search header__form-btn"></i>
-							</button>
+						<form action="#" id="frmSearch" autocomplete="off">
+    							<input name="searchtxt" placeholder="What are you looking for..." id="searchtxt" type="text" value="">
+    							<button class="search_btn header__form-button" id="btnSearch" name="btnSearch"><i class="icon-search header__form-btn"></i></button>
+                				<input name="subCat" id="subCat" type="hidden" value="0"/>
+                				<input name="iid" id="iid" type="hidden" value="0"/>
+    							<input type="hidden" name="multiplesearch" id="multiplesearch" value=""/>
 						</form>
 					</div>
 					<div class="col-xs-3 col-sm-2 p0">

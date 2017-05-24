@@ -469,28 +469,23 @@ ul, li
 	&__sub
 		display: none
 		position: absolute
-		width: 650px
-		height: 281px
+		width: 653px
 		border: 1px solid rgba(134, 130, 130, 0.54)
 		background-color: $white
 		z-index: 25
 		top: 35px
 		left: 0px 
 		&-columnone
-			display: block
-			height: 234px
-			position: absolute
-			top: 0
+			display: inline-block
 			border: none
 			background: $white
 			margin-top: 22px
-			z-index: 6
-			border-right: 1px solid rgba(134, 130, 130, 0.54)
+			float: left
 			&::after
 				content: ''
 				display: block
 				position: absolute
-				top: -28px
+				top: -6px
 				left: 40px
 				width: 10px
 				height: 10px
@@ -501,10 +496,12 @@ ul, li
 				-webkit-transform: rotate(225deg)
 		&-list
 			list-style-type: none
+			padding-bottom: 25px
 		&-item
 			text-align: left
 			width: 202px
 			padding-left: 30px
+			border-right: 1px solid rgba(134, 130, 130, 0.54)			
 		&-link
 			color: rgb(112, 114, 114)
 			font-size: 0.875em
@@ -513,23 +510,19 @@ ul, li
 				text-decoration: none
 				color: #189299
 		&-columntwo
-			display: block
-			height: 234px
-			position: absolute
-			top: 0
-			left: 203px
+			display: inline-block
 			border: none
 			background: $white
 			margin-top: 22px
-			border-right: 1px solid rgba(134, 130, 130, 0.54)
+			float: left
 		&-image
 			display: block
-			height: 234px
 			width: 245px
-			position: absolute
-			top: 0
-			left: 406px
 			padding: 0 
+			border: none
+			background: $white
+			margin-top: 8px
+			float: right
 		&-img
 			width: 200px
 			height: 188px

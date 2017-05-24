@@ -3,7 +3,7 @@
 @import "libs"
 @import "vars"
 @import "fontello"
-@import "magicsuggest"
+@import "jquery_theme"
 
 *
 	box-sizing: border-box
@@ -280,7 +280,7 @@ ul, li
 				color: #189299
 	&__subdropdown
 		display: none
-		height: 260px
+		height: auto
 		width: 360px
 		position: absolute
 		top: 0
@@ -470,19 +470,19 @@ ul, li
 		display: none
 		position: absolute
 		width: 650px
-		height: 281px
+		height: 300px
 		border: 1px solid rgba(134, 130, 130, 0.54)
-		background-color: $white
 		z-index: 25
 		top: 35px
+		background-color: #FFF
 		left: 0px 
 		&-columnone
 			display: block
+			width: 205px
 			height: 234px
 			position: absolute
 			top: 0
 			border: none
-			background: $white
 			margin-top: 22px
 			z-index: 6
 			border-right: 1px solid rgba(134, 130, 130, 0.54)
@@ -514,12 +514,12 @@ ul, li
 				color: #189299
 		&-columntwo
 			display: block
+			width: 205px
 			height: 234px
 			position: absolute
 			top: 0
 			left: 203px
 			border: none
-			background: $white
 			margin-top: 22px
 			border-right: 1px solid rgba(134, 130, 130, 0.54)
 		&-image
@@ -527,7 +527,7 @@ ul, li
 			height: 234px
 			width: 245px
 			position: absolute
-			top: 0
+			top: 25px
 			left: 406px
 			padding: 0 
 		&-img
@@ -602,35 +602,93 @@ ul, li
 // MAIN STYLES END
 
 
+.ui-widget-content
+	background-color: #FFFFFF
+	padding: 0
+ 
 
-// SEARCH FIELD STYLES
-.ms-ctn input
-	display: block
-	position: relative
-	color: $input_color
-	background: $white !important
-	border-radius: 0 !important
-	width: 100%
-	padding: 0 15px
-	border: 1px solid #cecece
-	height: 40px
-	margin: 0
-	border-left: 1px solid $white
+#frmSearch .ui-state-focus
+	background: none !important
+	border: none !important
+	background-image: none !important
+
+.ui-menu-item span 
+	display: inline
+
+.ui-menu-item img 
+	display: inline
 	float: left
-.ms-ctn .ms-sel-item
-	position: absolute
-	z-index: 1
-	top: 6px
-	left: 10px
-	padding: 3px 5px
-.ms-sel-ctn .ms-sel-item,
-.ms-ctn .ms-sel-item
-	color: rgba(0, 0, 0, 0.6)
-	border: 1px solid #cecece
-.ms-sel-ctn .ms-sel-item:hover
-.ms-ctn .ms-sel-item:hover
-	color: #262626
-// SEARCH FIELD STYLES END
+	border: 1px solid #CCCCCC
+	margin-right: 5px
+
+.ui-menu .ui-menu-item a
+	display: inline-block !important
+	padding: 5px 0px
+	width: 90%
+
+.ui-autocomplete .ui-state-hover,
+.ui-autocomplete .ui-widget-content .ui-state-hover,
+.ui-autocomplete .ui-widget-header .ui-state-hover,
+.ui-autocomplete .ui-state-focus,
+.ui-autocomplete .ui-widget-content .ui-state-focus,
+.ui-autocomplete .ui-widget-header .ui-state-focus
+	background: #FCFCFC !important
+	background-image: none !important
+	border: none !important
+
+.ui-autocomplete
+	width: 433px !important
+	padding: 0 4px
+
+.ui-autocomplete li a
+	color: #817d7d !important
+	cursor: pointer !important
+	font-family: Arial, Helvetica, sans-serif !important
+	font-size: 12px !important
+
+.ui-autocomplete li
+	color: #817d7d !important
+	cursor: pointer !important
+	font-family: Arial, Helvetica, sans-serif !important
+	clear: both
+	font-size: 12px !important
+
+.ui-autocomplete .subcatname
+	color: #ef6304 !important
+	font-weight: bold
+	margin-left: 10px
+
+.ui-autocomplete .highlight
+	font-weight: bold
+	color: #000000
+
+.ui-autocomplete .popular
+	padding: 10px 0px 0px 0px
+
+// .input_wrap input
+// 	width: 870px !important
+
+// .ui-autocomplete-multiselect.ui-state-default
+// 	margin-left: 207px !important
+// 	margin-top: 3px
+
+.ui-autocomplete-input
+	max-width: 100% !important
+	width: 100% !important
+	padding: 9px 0 9px 15px
+	outline: none
+
+.ui-button, .ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+html .ui-button.ui-state-disabled:active, 
+html .ui-button.ui-state-disabled:hover
+	border: none
+	background: white
+	max-width: 100%
+
+
+
 
 
 @import "media" // Всегда в конце

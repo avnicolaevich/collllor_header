@@ -19,7 +19,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jquery-ui/jquery-ui.js',
-		'app/libs/autocomplete.js',
+		// 'app/libs/autocomplete.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

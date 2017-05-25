@@ -18,6 +18,7 @@ $(document).ready(function(){
     // OPEN MENU END
 });
 
+// http://jsfiddle.net/mekwall/sgxKJ/
 $.widget("ui.autocomplete", $.ui.autocomplete, {
     options: $.extend({}, this.options, {
         multiselect: false
@@ -254,7 +255,8 @@ $(document).ready(function () {
                     if ($("#multiplesearch").val() != "") {
                         $('#searchtxt').removeAttr('placeholder');
                         $('span').removeClass('placeholder');
-                        $('.main_section .input_wrap #searchtxt').attr('style', 'width: 30px !important');
+                        
+                        // $('#searchtxt').attr('style', 'width: 30px !important');
                     }
                 },
                 multiselect: true
